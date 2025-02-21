@@ -1,18 +1,8 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-.container{
-    background: black;
-    text-align: center;
-}
-
-.container div{
-    margin: 2vh;
-    border-radius: 10px;
-    display: inline-block;
-    text-align: center;
-    padding: 5vh;
-    line-height: 10vh;
-    font-size: 15vh;
-    color: white;
-    background: #101010;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
