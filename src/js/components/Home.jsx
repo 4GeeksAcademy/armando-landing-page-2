@@ -1,78 +1,10 @@
 import React from "react";
+import Navbar from "./Navbar.jsx";
+import Jumbotron from "./Jumbotron.jsx";
+import Card from "./Card.jsx";
+import Footer from "./Footer.jsx";
 
 //create your first component
-
-const Navbar = () => {
-    return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div className="container">
-                <a className="navbar-brand" href="#">Start Bootstrap</a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav ml-auto">
-                        <li className="nav-item active">
-                            <a className="nav-link" href="#">Inicio<span className="sr-only">(current)</span></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Acerca de Nosotros</a>
-                        </li>
-						<li className="nav-item">
-                            <a className="nav-link" href="#">Servicios</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    );
-};
-
-const Jumbotron = () => {
-    return (
-        <div className="mb-4 bg-secondary text-white rounded-3 mt-4">
-            <div className="container-fluid py-0 py-md-5 text-start">
-                <h1 className="display-5 fw-bold">Bienvenido!</h1>
-                <p className="col-md-16 fs-3">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore facere distinctio voluptates quia officiis unde nobis neque veniam hic. Sequi totam laudantium, velit a quaerat deleniti blanditiis facere reiciendis cumque!
-                </p>
-                <button className="btn btn-primary btn-lg" type="button">
-                    Comenzar
-                </button>
-            </div>
-        </div>
-    );
-};
-
-const Card = (props) => {
-    const { image, title, description } = props.cards;
-    return (
-        <div className="card h-100">
-            <img src={image} className="card-img-top" style={{ height: '200px', objectFit: 'cover' }} alt={title} />
-            <div className="card-body">
-                <h5 className="card-title fw-bold">{title}</h5>
-                <p className="card-text">{description}</p>
-                <hr style={{ border: 'none', height: '1px', backgroundColor: '#343a40', margin: '0 -15px', marginBottom: '20px' }} />
-                <button className="btn btn-primary">
-                    Información
-                </button>
-            </div>
-        </div>
-    );
-};
-
-const Footer = () => {
-    return (
-        <footer className="bg-dark text-white text-center py-4">
-            <div className="container">
-                <p> <small>Copyright &copy; Your Website {new Date().getFullYear()}</small></p>
-            </div>
-        </footer>
-    );
-};
 
 const cardData = [
     {
